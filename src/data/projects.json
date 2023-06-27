@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "name": "Product Managment",
+        "link": "https://github.com/YoelEigner/products-web",
+        "live": "http://ec2-54-159-17-173.compute-1.amazonaws.com/react/",
+        "description": "This is a sample project mangment system created as a learning exercise.",
+        "tech": [
+            "React",
+            "Redux",
+            "Node.js",
+            "Express",
+            "SQL"
+        ],
+        "api": "https://github.com/YoelEigner/products-api"
+    },
+    {
+        "id": 2,
+        "name": "Task Managment",
+        "link": "https://github.com/YoelEigner/tasks",
+        "description": "This is a sample Task mangment system created as a learning exercise.",
+        "tech": [
+            "React",
+            "Redux",
+            "Node.js",
+            "Express"
+        ],
+        "api": "https://github.com/YoelEigner/task-api"
+    },
+    {
+        "id": 3,
+        "name": "More...",
+        "link": "https://github.com/YoelEigner/",
+        "description": "There are more projects I have worked on both in the past and currently, feel free to check them out by clicking me.",
+        "tech": [
+            "React",
+            "Redux",
+            "Node.js",
+            "Express",
+            "SQL",
+            "MongoDB"
+        ]
+    }
+]

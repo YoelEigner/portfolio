@@ -1,0 +1,191 @@
+.custom-list {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: left;
+    cursor: pointer;
+
+    & a {
+        color: inherit;
+        text-decoration: none;
+    }
+}
+
+.custom-list li::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 2px;
+    background-color: rgb(255, 255, 255);
+    margin-right: 10px;
+    text-align: left;
+    margin-bottom: 5px;
+    transition: 1s;
+    margin-top: 20px;
+
+
+}
+
+.custom-list li:hover::before {
+    transition: 1s;
+    width: 60px;
+}
+
+.title {
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+
+}
+
+.left-pane {
+    position: sticky;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.right-pane {
+    height: 100vh;
+    overflow-y: auto;
+}
+
+
+.main-container-left {
+    padding-top: 10%;
+    margin-left: 40%;
+
+    & h1,
+    h3,
+    li,
+    nav,
+    h5 {
+        color: #ffffff;
+    }
+
+}
+
+.main-container-right {
+    padding-top: 10%;
+    margin-left: 20px;
+    margin-right: 20px;
+    overflow: hidden;
+
+
+}
+
+
+/* ##################### RIGHT PANE ######################## */
+
+.card-container {
+    text-align: left;
+    background-color: rgb(143, 143, 143) !important;
+    margin-bottom: 10px;
+    transition: 0.3s;
+
+}
+
+.date-col {
+    margin-top: 15px !important;
+    margin-left: 10px;
+}
+
+.card-container:hover {
+    box-shadow: 0 0 20px rgba(250, 247, 247, 0.5);
+}
+
+.card-container {
+    transition: 1s;
+}
+
+@media (max-width: 768px) {
+    .home-container {
+        flex-direction: column;
+    }
+
+    .col {
+        width: 100%;
+    }
+
+    .main-container-left {
+        padding-top: 10%;
+        margin-left: 5%;
+
+        & h1,
+        h3,
+        li,
+        nav,
+        h5 {
+            color: #ffffff;
+        }
+
+    }
+}
+
+/* ##################### ABOUT ######################## */
+.main-contianer-about {
+    margin-bottom: 5%;
+    /* width: 40rem; */
+    color: #ffffff;
+    text-align: left;
+    max-width: 40rem;
+    word-wrap: break-word;
+    /* max-width: 700px; */
+
+}
+
+
+/* ##################### PROJECTS ######################## */
+#projects {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.project-container {
+    cursor: pointer;
+}
+
+.data-name {
+    flex-direction: row;
+    display: flex;
+}
+
+.card-container:hover .arrow {
+    transform: translate(5px, -5px);
+    transition: 0.3s;
+}
+
+.arrow {
+    position: relative;
+    top: -2px;
+    margin-left: 5px;
+}
+
+.data-tech {
+    background-color: #272d30;
+    text-align: center;
+    border-radius: 25px;
+    padding: 0px 10px 0px 10px;
+    color: gray;
+
+}
+
+
+.tech-container {
+    gap: 20px;
+    /* overflow: hidden; */
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+/* ##################### FOOTER ######################## */
+.footer {
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
