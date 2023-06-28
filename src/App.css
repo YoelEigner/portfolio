@@ -5,12 +5,19 @@ body,
   overflow-x: hidden;
 }
 
-html {
+html * {
   scroll-behavior: smooth;
+  font-family: Bebas Neue;
+
 }
+
 ::selection {
   color: #556e88;
   background: rgb(156, 155, 155);
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 .App {
@@ -53,4 +60,3 @@ html {
     transform: rotate(360deg);
   }
 }
-

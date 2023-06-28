@@ -41,7 +41,7 @@
     position: sticky;
     top: 0;
     height: 100vh;
-    overflow-y: auto;
+    /* overflow-y: auto; */
 }
 
 .right-pane {
@@ -122,15 +122,42 @@
 }
 
 /* ##################### ABOUT ######################## */
-.main-contianer-about {
-    margin-bottom: 5%;
-    /* width: 40rem; */
-    color: #ffffff;
-    text-align: left;
-    max-width: 40rem;
-    word-wrap: break-word;
-    /* max-width: 700px; */
 
+.wrapper {
+    margin: auto;
+    width: 40rem;
+    text-align: left;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+.bouncing-text {
+    color: white;
+    font-size: 26px;
+    padding-top: 40%;
+
+
+}
+
+.bounce-letter {
+    opacity: 0;
+    animation: bounce 0.1s linear forwards running;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+
+    }
 }
 
 
@@ -180,6 +207,7 @@
 }
 
 
+
 /* ##################### FOOTER ######################## */
 .footer {
     position: absolute;
@@ -188,4 +216,14 @@
     width: 100%;
     text-align: center;
     padding: 10px;
+    flex-direction: row;
+}
+
+.animate-icons {
+    transition: 0.3s;
+}
+
+.animate-icons:hover {
+    transform: translate(0px, -5px);
+    transition: 0.3s;
 }

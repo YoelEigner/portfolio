@@ -1,23 +1,18 @@
-import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 import { LeftPane } from "./LeftPane";
 import { RightPane } from "./RightPane";
-import { gradientStyle } from "../utils/Util";
-
 
 export const Home = () => {
 
-    const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
-
-    useEffect(() => {
-        const handleMouseMove = (event) => { setCursorPosition({ x: event.clientX + window.scrollX, y: event.clientY + window.scrollY, }); };
-        document.addEventListener('mousemove', handleMouseMove);
-    }, []);
-
     return (
-        <div className='row home-container' style={gradientStyle(cursorPosition)}>
+        <motion.div className='row home-container'
+            initial={{ height: 0 }}
+            animate={{ height: '100%' }}
+            exit={{y: window.innerHeight, transition: { duration: 1 } }}
+        >
             <div className='col left-pane'><LeftPane /></div>
             <div className='col right-pane'><RightPane /></div>
-        </div>
+        </motion.div>
 
     );
 }
