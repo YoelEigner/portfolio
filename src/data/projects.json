@@ -16,7 +16,7 @@
         "name": "Product Managment",
         "link": "https://github.com/YoelEigner/products-web",
         "live": "http://ec2-54-159-17-173.compute-1.amazonaws.com/react/",
-        "description": "This is a sample project mangment system created as a learning exercise.",
+        "description": "This is a sample Project mangment system created as a learning exercise.",
         "tech": [
             "React",
             "Redux",
