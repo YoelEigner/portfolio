@@ -16,23 +16,23 @@ export const Projects = () => {
                                     <div className="col-md-8">
                                         <div className="card-body ">
                                             <div className='data-name'>
-                                                <h6>{data.name}</h6>
+                                                <h6 className='card-title font-header'>{data.name}</h6>
                                                 <div className='arrow'><FiArrowUpRight /></div>
                                             </div>
-                                            <p className="card-text">
+                                            <p className="card-text font-subtext">
                                                 {data.description}
                                             </p>
-                                            <p className="card-text">
-                                                {data.live && <a className="text-muted" onClick={(e) => { e.stopPropagation(); handleDivClick(data.live); }}>{'Live site'}</a>}{' '}
-                                                {data.api && <a className="text-muted" onClick={(e) => { e.stopPropagation(); handleDivClick(data.api); }}>{'API'}</a>}
+                                            <p className="card-text ">
+                                                {data.live && <a className="text-muted font-subtext" onClick={(e) => { e.stopPropagation(); handleDivClick(data.live); }}>{'Live site'}</a>}{' '}
+                                                {data.api && <a className="text-muted font-subtext" onClick={(e) => { e.stopPropagation(); handleDivClick(data.api); }}>{'API'}</a>}
                                             </p>
-                                            <p className="card-text">
+                                            <div className="card-text">
                                                 <small className="text-muted tech-container">
                                                     {data?.tech?.map((item, index) => (
-                                                        <div className="data-tech" key={index}>{item} </div>
+                                                        <div className="data-tech font-subtext" key={index}>{item} </div>
                                                     ))}
                                                 </small>
-                                            </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

@@ -1,0 +1,217 @@
+{
+    "name": "Yoel Eigner",
+    "phone": "+972-54-260-5930",
+    "email": "joele8323@gmail.com",
+    "emailLink": "mailto:joele8323@gmail.com",
+    "title": "Full stack engineer",
+    "github": "https://github.com/YoelEigner",
+    "linkedin": "https://linkedin.com/in/yoel-eigner",
+    "about1": "Full stack developer, looking to grow in full stack development for long-term career growth.",
+    "about2": "Adaptive self-learner, with a solid ability to see through and develop solutions for business inefficiencies.",
+    "about3": "A Dedicated programmer and problem-solver, a task-oriented hard-worker who enjoys development!",
+    "experience": [
+        {
+            "id": 1,
+            "name": "Lockheed Martin",
+            "title": "Fullstack engineer",
+            "start": "2021",
+            "end": "Present",
+            "description": "Deliver high-quality, robust production code for a diverse array of projects including hardware & software tracking system that saved the company 100's of hours, and internal billing data search. Support other web application development and maintenance.",
+            "tech": [
+                "React",
+                "Redux",
+                "Node.js",
+                "Express",
+                "SQL",
+                "MongoDB"
+            ],
+            "bullets": [
+                "Design & develop software to address and track needs of the company’s entire EMEA operations",
+                "Support other needs as they arise, incl. developing & maintaining web applications with MySQL, APIs "
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Lockheed Martin",
+            "title": "Systems Administrator",
+            "start": "2018",
+            "end": "2021",
+            "description": "Managed network and computer hardware across four EMEA offices. Conducted installations, configurations, and troubleshooting for computer/mobile devices, operating systems, software, and connectivity. Implemented improvements to the troubleshooting alert system, resulting in a significant annual time-saving of over 1000 hours.",
+            "tech": [
+                "Windows server",
+                "Linux",
+                "Bash",
+                "Powershell"
+            ],
+            "bullets": [
+                "Maintained network and computer hardware for four offices in the EMEA region",
+                "Installed, configured, troubleshooted computer/mobile devices/operating systems, software & connectivity",
+                "Developed efficiencies to improve troubleshooting alert system, saving 1000+ hours annually"
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Iteam Solutions",
+            "title": "Systems Administrator",
+            "start": "2018",
+            "end": "2019",
+            "description": "Delivered comprehensive IT support to over 150 users, offering installation, configuration, and troubleshooting assistance for both software and hardware.",
+            "tech": [
+                "Windows server",
+                "Linux",
+                "Bash",
+                "Powershell"
+            ],
+            "bullets": [
+                "Provided IT support to 150+ users, installing, configuring and troubleshooting for all software and hardware "
+            ]
+        },
+        {
+            "id": 4,
+            "name": "Israel Air Force",
+            "title": "Systems Administrator & Full stack engineer",
+            "start": "2016",
+            "end": "2018",
+            "description": "Developed and maintained software to monitor soldier training certifications/recertification using C#, ASP.NET, and MySQL. Implemented scripting for automation and enhanced functionality. Effectively managed a vast network of over 2,000 computers and servers",
+            "tech": [
+                "C#",
+                "ASP.NET",
+                "MySQL"
+            ],
+            "bullets": [
+                "Developed & maintained software to track soldier training certifications/recertification(C#, ASP.NET ,MySQL)",
+                "Utilized scripting to automate actions and improve functionality; managed over 2,000 computers and servers"
+            ]
+        }
+    ],
+    "onGoingWorkProjects": [
+        {
+            "jobId": 1,
+            "title": "Promoted to develop efficiencies through software programming; ongoing projects includes:",
+            "bullets": [
+                "Computer hardware tracking software to streamline equipment search & purchase process (React.JS, Redux, MongoDB)",
+                "Computer OS version tracking to alert technicians regarding upgrades (React, Redux, Node.JS)",
+                "Single page application internal billing information data search and display (React.JS, Node.JS)"
+            ]
+        }
+    ],
+    "sideProjects": [
+        {
+            "id": 1,
+            "name": "Manteca",
+            "title": "Full stack engineer",
+            "start": "2022",
+            "end": "Present",
+            "description": "AI finance app in stealth mode",
+            "tech": [
+                "React Native",
+                "Python",
+                "AWS"
+            ],
+            "bullets": [
+                "Develop, debug, maintain code (React. Native) for a complex predictive system hosted on AWS",
+                "Ensure a seamless user experience on iOS and Android"
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Centre For Interpersonal Relationships ",
+            "title": "Full stack engineer",
+            "start": "2022",
+            "end": "2023",
+            "description": "Freelance project",
+            "tech": [
+                "React",
+                "Redux",
+                "Node.js",
+                "Express",
+                "SQL"
+            ],
+            "bullets": [
+                "Develop a secure invoicing system based on the payment logic of the business (ReactJS, Redux, NodeJS)",
+                "Implement JWT login tokens for specific user access, customizable to accommodate a range of users",
+                "Reduced time to access data for invoice generation, creating a script to sync payment data to the local DB"
+            ]
+        }
+    ],
+    "skills": {
+        "programming": [
+            {
+                "id": 1,
+                "name": "React",
+                "level": "skilled"
+            },
+            {
+                "id": 2,
+                "name": "Node.js",
+                "level": "skilled"
+            },
+            {
+                "id": 3,
+                "name": "React Native",
+                "level": "experienced"
+            },
+            {
+                "id": 4,
+                "name": "Redux",
+                "level": "skilled"
+            },
+            {
+                "id": 5,
+                "name": "SQL",
+                "level": "skilled"
+            },
+            {
+                "id": 6,
+                "name": "MongoDB ",
+                "level": "experienced"
+            },
+            {
+                "id": 7,
+                "name": "Python ",
+                "level": "Familiar"
+            },
+            {
+                "id": 8,
+                "name": "AWS ",
+                "level": "Familiar"
+            }
+        ],
+        "soft": [
+            "Problem-solver",
+            "ability to streamline processes and develop efficiencies within global teams"
+        ]
+    },
+    "education": [
+        {
+            "name": "Full Stack Developer Course",
+            "institute": "Yaniv Arad Training Labs",
+            "year": "2020"
+        },
+        {
+            "name": "Devops Engineering",
+            "institute": "Yaniv Arad Training Labs",
+            "year": "2019"
+        },
+        {
+            "name": "Introduction to Data Communications",
+            "institute": "John Bryce Institute",
+            "year": "2016"
+        },
+        {
+            "name": "Windows Server",
+            "institute": "HackerU Institute",
+            "year": "2016"
+        },
+        {
+            "name": "",
+            "institute": "Essex county college",
+            "year": "2013 - 2016"
+        }
+    ],
+    "citizenships": [
+        "USA",
+        "Canada",
+        "Israel"
+    ]
+}

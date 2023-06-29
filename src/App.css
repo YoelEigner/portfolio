@@ -5,6 +5,12 @@ body,
   overflow-x: hidden;
 }
 
+*a {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+
+
 html * {
   scroll-behavior: smooth;
   font-family: Bebas Neue;
@@ -47,9 +53,6 @@ html * {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
 @keyframes App-logo-spin {
   from {
@@ -59,4 +62,19 @@ html * {
   to {
     transform: rotate(360deg);
   }
+}
+
+
+
+@font-face {
+  font-family: 'Roboto Condensed';
+  font-style: normal;
+  font-weight: normal;
+  src: url('./fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf') format('truetype');
+}
+
+
+@font-face {
+  font-family: 'BebasNeue';
+  src: url(./fonts/BebasNeue-Regular.ttf) format('truetype');
 }

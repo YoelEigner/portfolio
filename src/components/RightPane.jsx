@@ -1,6 +1,3 @@
-import Card from 'react-bootstrap/Card';
-import jsonData from '../data/data.json'
-import { About } from './About';
 import { Projects } from './Projects';
 import { Experience } from './Experience';
 

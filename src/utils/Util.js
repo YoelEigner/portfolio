@@ -28,6 +28,7 @@ export const animateText = (setShow, document) => {
         word.split('').forEach((letter, letterIndex) => {
             const span = document.createElement('span');
             span.classList.add('bounce-letter');
+            span.classList.add('font-subtext');
             span.textContent = letter;
             span.style.animationDelay = `${wordIndex * 0.05 + letterIndex * 0.1}s`;
             text.appendChild(span);

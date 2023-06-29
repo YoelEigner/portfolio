@@ -20,10 +20,10 @@ export const About = () => {
         >
             <div className="bouncing-text"></div>
 
-            <div class="col text-center ">
+            <div className="col text-center ">
                 {show &&
                     <button
-                        className=" glow-on-hover"
+                        className=" glow-on-hover font-subtext"
                         type="button"
                         onClick={handleClick}
                     >EXPLORE MORE</button>
