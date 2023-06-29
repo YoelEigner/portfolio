@@ -224,6 +224,20 @@
     margin-bottom: 10%;
 }
 
+.site-link {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    padding: 5px;
+    border-radius: 10px;
+    color: inherit !important;
+    text-decoration: none !important;
+
+
+}
+
+.site-link:hover {
+    box-shadow: 0px 0px 10px rgba(134, 131, 131, 0.3);
+}
+
 .project-container {
     cursor: pointer;
 }
