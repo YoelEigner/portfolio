@@ -1,6 +1,18 @@
 [
     {
         "id": 1,
+        "name": "Portfolio Site ",
+        "link": "https://github.com/YoelEigner/portfolio",
+        "live": "http://ec2-54-159-17-173.compute-1.amazonaws.com/portfolio/",
+        "description": "This is the site you are curretnly on, click here to see the full code.",
+        "tech": [
+            "React",
+            "React Router",
+            "CSS"
+        ]
+    },
+    {
+        "id": 1,
         "name": "Product Managment",
         "link": "https://github.com/YoelEigner/products-web",
         "live": "http://ec2-54-159-17-173.compute-1.amazonaws.com/react/",
@@ -15,7 +27,7 @@
         "api": "https://github.com/YoelEigner/products-api"
     },
     {
-        "id": 2,
+        "id": 3,
         "name": "Task Managment",
         "link": "https://github.com/YoelEigner/tasks",
         "description": "This is a sample Task mangment system created as a learning exercise.",
@@ -28,7 +40,7 @@
         "api": "https://github.com/YoelEigner/task-api"
     },
     {
-        "id": 3,
+        "id": 4,
         "name": "More...",
         "link": "https://github.com/YoelEigner/",
         "description": "There are more projects I have worked on both in the past and currently, feel free to check them out by clicking me.",
