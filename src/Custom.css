@@ -54,7 +54,7 @@
 
 /* ################# LEFT PANE ######################## */
 .font-header {
-    font-family: BebasNeue;
+    font-family: BebasNeue !important;
 }
 
 .font-subtext {
@@ -98,7 +98,17 @@
     margin-bottom: 10px;
     transition: 0.3s;
     max-width: 40rem;
+    color: #4d4c4c !important;
+    transition: 1s;
 
+}
+
+.card-container:hover {
+    color: #000000 !important;
+    background-color: rgb(204, 206, 209) !important;
+    box-shadow: 0 0 20px rgba(250, 247, 247, 0.5);
+    transform: translate(5px, -5px);
+    transition: 0.3s;
 }
 
 @media (max-width: 768px) {
@@ -134,18 +144,7 @@
 
 }
 
-.card-container {
-    color: #4d4c4c !important;
-    transition: 1s;
-}
 
-.card-container:hover {
-    color: #000000 !important;
-    background-color: rgb(204, 206, 209) !important;
-    box-shadow: 0 0 20px rgba(250, 247, 247, 0.5);
-    transform: translate(5px, -5px);
-    transition: 0.3s;
-}
 
 @media (max-width: 768px) {
     .home-container {
@@ -188,7 +187,15 @@
     font-size: 26px;
     padding-top: 20%;
 
+    padding-right: 20%;
+    padding-left: 20%;
+}
 
+@media screen and (max-width: 768px) {
+    .bouncing-text {
+        padding-right: 5%;
+        padding-left: 5%;
+    }
 }
 
 .bounce-letter {
@@ -256,16 +263,35 @@
 
 
 /* ##################### FOOTER ######################## */
-.footer {
+.social-icons {
     position: absolute;
     bottom: 10%;
     left: 0;
-    width: 50%;
-    margin-left: 30%;
-    text-align: center;
+    width: 100%;
+    margin-left: 20%;
+    text-align: left;
     padding: 10px;
     flex-direction: row;
+    text-align: left;
 }
+
+
+
+@media (max-width: 768px) {
+    .social-icons {
+        position: none !important;
+        bottom: -20%;
+        left: 0;
+        width: 100%;
+        margin-left: 5%;
+        padding-top: 0%;
+        flex-direction: column;
+        text-align: left;
+
+    }
+
+}
+
 
 .animate-icons {
     transition: 0.3s;
@@ -288,6 +314,37 @@
     padding-bottom: 10%;
 }
 
+@media screen and (max-width: 768px) {
+    .experience-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .experience-container b {
+        display: none;
+    }
+
+    .experience-container h4 {
+        margin: 0;
+        margin-bottom: 8px;
+    }
+}
+
+.experience-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+.experience-container h4 {
+    margin: 0;
+    margin-right: 8px;
+}
+
+.experience-container b {
+    margin-right: 4px;
+}
+
 #experience {
     margin-top: 40px;
 
@@ -308,6 +365,10 @@
 
 .pop-out:hover {
     transform: scale(1.1);
+    /* padding: 10px; */
+    transition: transform 0.3s;
+
+
 }
 
 .skills {
@@ -320,4 +381,75 @@
     color: rgb(204, 206, 209);
     background-color: rgb(143, 143, 143) !important;
 
+}
+
+
+
+.experience-item {
+    align-items: center !important;
+    text-align: center !important;
+    /* padding-left: 0px; */
+    margin: 2px;
+    transition: transform 0.3s;
+}
+
+.experience-items {
+    max-width: 50rem;
+    transition: transform 0.3s;
+
+}
+
+.experience-item-date {
+    text-align: end;
+    flex: 1;
+    margin-right: 10px;
+}
+
+
+.experience-items:hover {
+    transition: transform 0.3s;
+    color: rgb(204, 206, 209);
+    background-color: rgb(143, 143, 143) !important;
+
+}
+
+.personal-info-container {
+    margin-top: 20px;
+}
+
+
+/* ########################### BULLET ######################## */
+.icon-list {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: left;
+    cursor: pointer;
+    z-index: 10;
+
+    & a {
+        color: inherit;
+        text-decoration: none;
+
+    }
+}
+
+.icon-list li::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 2px;
+    background-color: #c5bfbf;
+
+    margin-right: 10px;
+    text-align: left;
+    margin-bottom: 5px;
+    transition: 1s;
+    margin-top: 20px;
+
+
+}
+
+.icon-list li:hover::before {
+    transition: 1s;
+    width: 60px;
 }

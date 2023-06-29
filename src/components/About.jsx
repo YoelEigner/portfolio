@@ -15,15 +15,15 @@ export const About = () => {
     return (
         <motion.div className='wrapper'
             initial={{ width: 0 }}
-            animate={{ width: '50%' }}
+            animate={{ width: '100%' }}
             exit={{ x: window.innerWidth, transition: { duration: 1 } }}
         >
-            <div className="bouncing-text"></div>
+            <div className="bouncing-text "></div>
 
             <div className="col text-center ">
                 {show &&
                     <button
-                        className=" glow-on-hover font-subtext"
+                        className=" glow-on-hover font-subtext "
                         type="button"
                         onClick={handleClick}
                     >EXPLORE MORE</button>

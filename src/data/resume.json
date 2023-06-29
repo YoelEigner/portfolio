@@ -134,77 +134,79 @@
             ]
         }
     ],
-    "skills": {
-        "programming": [
-            {
-                "id": 1,
-                "name": "React",
-                "level": "skilled"
-            },
-            {
-                "id": 2,
-                "name": "Node.js",
-                "level": "skilled"
-            },
-            {
-                "id": 3,
-                "name": "React Native",
-                "level": "experienced"
-            },
-            {
-                "id": 4,
-                "name": "Redux",
-                "level": "skilled"
-            },
-            {
-                "id": 5,
-                "name": "SQL",
-                "level": "skilled"
-            },
-            {
-                "id": 6,
-                "name": "MongoDB ",
-                "level": "experienced"
-            },
-            {
-                "id": 7,
-                "name": "Python ",
-                "level": "Familiar"
-            },
-            {
-                "id": 8,
-                "name": "AWS ",
-                "level": "Familiar"
-            }
-        ],
-        "soft": [
-            "Problem-solver",
-            "ability to streamline processes and develop efficiencies within global teams"
-        ]
-    },
+    "skills": [
+        {
+            "id": 1,
+            "name": "React",
+            "level": "skilled"
+        },
+        {
+            "id": 2,
+            "name": "Node.js",
+            "level": "skilled"
+        },
+        {
+            "id": 3,
+            "name": "React Native",
+            "level": "experienced"
+        },
+        {
+            "id": 4,
+            "name": "Redux",
+            "level": "skilled"
+        },
+        {
+            "id": 5,
+            "name": "SQL",
+            "level": "skilled"
+        },
+        {
+            "id": 6,
+            "name": "MongoDB ",
+            "level": "experienced"
+        },
+        {
+            "id": 7,
+            "name": "Python ",
+            "level": "Familiar"
+        },
+        {
+            "id": 8,
+            "name": "AWS ",
+            "level": "Familiar"
+        }
+    ],
+    "soft": [
+        "Problem-solver",
+        "ability to streamline processes and develop efficiencies within global teams"
+    ],
     "education": [
         {
+            "id": 1,
             "name": "Full Stack Developer Course",
             "institute": "Yaniv Arad Training Labs",
             "year": "2020"
         },
         {
+            "id": 2,
             "name": "Devops Engineering",
             "institute": "Yaniv Arad Training Labs",
             "year": "2019"
         },
         {
+            "id": 3,
             "name": "Introduction to Data Communications",
             "institute": "John Bryce Institute",
             "year": "2016"
         },
         {
+            "id": 4,
             "name": "Windows Server",
             "institute": "HackerU Institute",
             "year": "2016"
         },
         {
-            "name": "",
+            "id": 5,
             "institute": "Essex county college",
             "year": "2013 - 2016"
         }

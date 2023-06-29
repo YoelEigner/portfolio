@@ -11,6 +11,7 @@
     z-index: 0;
     border-radius: 10px;
     font-size: 20px;
+    margin-bottom: 10%;
 }
 
 .glow-on-hover:before {
@@ -42,6 +43,9 @@
     opacity: 1;
 }
 
+.padding-btm{
+    padding-bottom: 10%;
+}
 .glow-on-hover:after {
     z-index: -1;
     content: '';
