@@ -1,4 +1,4 @@
-import aboutData from '../data/about.json'
+// import aboutData from '../data/about.json'
 
 export const gradientStyle = (cursorPosition) => {
     return {
@@ -19,7 +19,7 @@ export const handleDivClick = (url) => {
     window.open(url, '_blank');
 };
 
-export const animateText = (setShow, document) => {
+export const animateText = (setShow, document, aboutData) => {
 
     const text = document.querySelector('.bouncing-text');
     const words = aboutData.about.split(' ');

@@ -2,15 +2,27 @@ import React, { useEffect, useState } from 'react';
 import { animateText } from '../utils/Util';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion'
+import { GetAboutData } from '../DAL/GetData';
 export const About = () => {
     const [show, setShow] = useState(false)
+    const [isLoading, setIsLoading] = useState(false)
+    const [data, setData] = useState(null)
     const navigate = useNavigate()
     const handleClick = () => {
         navigate('/home')
     }
     useEffect(() => {
-        animateText(setShow, document)
+        const getData = async () => {
+            const json = await GetAboutData()
+            setData(json)
+            setIsLoading(false)
+        }
+        setIsLoading(true)
+        getData()
     }, []);
+    useEffect(() => {
+        { data !== null && animateText(setShow, document, data) }
+    }, [data])
 
     return (
         <motion.div className='wrapper'

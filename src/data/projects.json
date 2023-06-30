@@ -8,11 +8,12 @@
         "tech": [
             "React",
             "React Router",
+            "AWS",
             "CSS"
         ]
     },
     {
-        "id": 1,
+        "id": 2,
         "name": "Product Managment",
         "link": "https://github.com/YoelEigner/products-web",
         "live": "http://ec2-54-159-17-173.compute-1.amazonaws.com/react/",

@@ -1,16 +1,28 @@
 import Card from 'react-bootstrap/Card';
-import jsonData from '../data/projects.json'
 import { handleDivClick } from '../utils/Util';
 import { FiArrowUpRight } from "react-icons/fi";
+import { useEffect, useState } from 'react';
+import { GetProjectsData } from '../DAL/GetData';
 
 
 export const Projects = () => {
+    const [isLoading, setIsLoading] = useState(false)
+    const [data, setData] = useState(null)
+    useEffect(() => {
+        const getData = async () => {
+            const json = await GetProjectsData()
+            setData(json)
+            setIsLoading(false)
+        }
+        setIsLoading(true)
+        getData()
+    }, []);
     return (
         <div className='project-container'>
-            {jsonData.map((data) => {
+            {data && data.map((data) => {
                 return (
                     <div id='experience' key={data.id} onClick={() => handleDivClick(data.link)}>
-                        <Card style={{ maxWidth: '40rem'}} className="card-container">
+                        <Card className="card-container">
                             <div className="col">
                                 <div className="row g-0">
                                     <div className="col-md-8">
