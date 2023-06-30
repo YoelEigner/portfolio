@@ -1,25 +1,15 @@
 import Card from 'react-bootstrap/Card';
 import { handleDivClick } from '../utils/Util';
 import { FiArrowUpRight } from "react-icons/fi";
-import { useEffect, useState } from 'react';
-import { GetProjectsData } from '../DAL/GetData';
+import { useSelector } from 'react-redux';
 
 
 export const Projects = () => {
-    const [isLoading, setIsLoading] = useState(false)
-    const [data, setData] = useState(null)
-    useEffect(() => {
-        const getData = async () => {
-            const json = await GetProjectsData()
-            setData(json)
-            setIsLoading(false)
-        }
-        setIsLoading(true)
-        getData()
-    }, []);
+    const { projects } = useSelector((state) => state);
+
     return (
         <div className='project-container'>
-            {data && data.map((data) => {
+            {projects && projects.map((data) => {
                 return (
                     <div id='experience' key={data.id} onClick={() => handleDivClick(data.link)}>
                         <Card className="card-container">

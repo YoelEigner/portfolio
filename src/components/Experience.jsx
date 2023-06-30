@@ -1,22 +1,11 @@
 import Card from 'react-bootstrap/Card';
-import { useEffect, useState } from 'react';
-import { GetResumeData } from '../DAL/GetData';
+import { useSelector } from 'react-redux';
 
 export const Experience = () => {
-    const [isLoading, setIsLoading] = useState(false)
-    const [data, setData] = useState(null)
-    useEffect(() => {
-        const getData = async () => {
-            const json = await GetResumeData()
-            setData(json)
-            setIsLoading(false)
-        }
-        setIsLoading(true)
-        getData()
-    }, []);
+    const { resume } = useSelector((state) => state);
 
     return (<div>
-        {data && data?.experience?.map((data) => {
+        {resume && resume?.experience?.map((data) => {
             return (
                 <div key={data.id}>
                     <Card className="card-container">
