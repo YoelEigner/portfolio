@@ -16,7 +16,15 @@ export const routes = [
         component: <Home />,
     },
     {
+        path: '/portfolio/home',
+        component: <Home />,
+    },
+    {
         path: '/resume',
         component: <Resume />,
     },
+    {
+        path: '/portfolio/resume',
+        component: <Resume />,
+    }
 ];

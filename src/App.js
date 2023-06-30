@@ -6,7 +6,7 @@ import { BrowserRouter as Router } from 'react-router-dom';
 import { useEffect, useState } from 'react';
 import { gradientStyle } from './utils/Util';
 import { AnimatedRoutes } from './components/AnimatedRoutes';
-import { DeleteAll, SaveAboutData, SaveProjectseData, SaveResumeData } from './utils/ReduxMiddleware';
+import { SaveAboutData, SaveProjectseData, SaveResumeData } from './utils/ReduxMiddleware';
 import { useDispatch } from 'react-redux';
 
 function App() {
@@ -26,15 +26,17 @@ function App() {
     getData()
   }, []);
 
+
   return (
     <>
-      <Router>
-        <div className="App" style={gradientStyle(cursorPosition)}>
-          <AnimatedRoutes />
-        </div>
-      </Router>
+      <div>
+        <Router>
+          <div className="App" style={gradientStyle(cursorPosition)}>
+            <AnimatedRoutes />
+          </div>
+        </Router>
+      </div>
     </>
-
   );
 }
 
