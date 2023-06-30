@@ -30,3 +30,12 @@ export const SaveProjectseData = () => {
         }
     }
 }
+export const DeleteAll = () => {
+    return async (dispatch) => {
+        try {
+            dispatch({ type: 'DELETE_ALL' })
+        } catch (err) {
+            console.log('Delete Data: err in Deleting Data', err)
+        }
+    }
+}

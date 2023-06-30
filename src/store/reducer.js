@@ -11,6 +11,13 @@ const rootReducer = (state = {
             return { ...state, resume: action.resume }
         case "SAVE_PROJECTS_DATA":
             return { ...state, projects: action.projects }
+        case "DELETE_ALL":
+            let clear = {
+                about: null,
+                resume: null,
+                projects: null
+            }
+            return { ...state, state: clear }
         default:
             return state;
     }

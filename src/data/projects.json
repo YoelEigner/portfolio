@@ -7,6 +7,7 @@
         "description": "This is the site you are curretnly on, click here to see the full code.",
         "tech": [
             "React",
+            "Redux",
             "React Router",
             "AWS",
             "CSS"
