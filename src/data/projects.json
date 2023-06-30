@@ -37,12 +37,41 @@
             "React",
             "Redux",
             "Node.js",
-            "Express"
+            "Express",
+            "MongoDB"
         ],
         "api": "https://github.com/YoelEigner/task-api"
     },
     {
         "id": 4,
+        "name": "Invoicing System",
+        "link": "https://github.com/YoelEigner/reports",
+        "description": "This is a freelance project I worked on really early on in my coding career. It involves developing a comprehensive system that efficiently processes vast amounts of data through advanced algorithms. Ultimately, this system generates accurate and professional invoices for the clients.",
+        "tech": [
+            "React",
+            "Redux",
+            "Node.js",
+            "Express",
+            "SQL"
+        ],
+        "api": "https://github.com/YoelEigner/Reports_Back_End"
+    },
+    {
+        "id": 5,
+        "name": "Manteca AI App",
+        "link": "https://apps.apple.com/us/app/manteca/id1667946093?uo=4",
+        "description": "This is a side project I have been contributing to. I am heading the front-end development for a project called \"Manteca\" which is a personal finance app that is built with React(React Native). The app is currently avalible on IOS and Android",
+        "tech": [
+            "React",
+            "Redux",
+            "Node.js",
+            "Express",
+            "SQL"
+        ],
+        "live": "https://play.google.com/store/apps/details?id=com.manteca.app"
+    },
+    {
+        "id": 6,
         "name": "More...",
         "link": "https://github.com/YoelEigner/",
         "description": "There are more projects I have worked on both in the past and currently, feel free to check them out by clicking me.",
