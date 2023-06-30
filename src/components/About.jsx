@@ -2,11 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { animateText } from '../utils/Util';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion'
-import { GetAboutData } from '../DAL/GetData';
-import { useDispatch, useSelector } from 'react-redux';
-import { SaveAboutData } from '../utils/ReduxMiddleware';
+import { useSelector } from 'react-redux';
 export const About = () => {
-    const { about } = useSelector((state) => state);
+    const about = useSelector((state) => state.about);
     const [show, setShow] = useState(false)
     const [isLoading, setIsLoading] = useState(false)
     const navigate = useNavigate()

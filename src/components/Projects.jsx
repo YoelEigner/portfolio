@@ -5,7 +5,7 @@ import { useSelector } from 'react-redux';
 
 
 export const Projects = () => {
-    const { projects } = useSelector((state) => state);
+    const projects = useSelector((state) => state.projects);
 
     return (
         <div className='project-container'>

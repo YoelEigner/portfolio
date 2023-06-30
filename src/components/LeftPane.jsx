@@ -6,8 +6,8 @@ import { useSelector } from "react-redux";
 
 export const LeftPane = () => {
     const navigate = useNavigate()
-    const { resume } = useSelector((state) => state);
-    
+    const resume = useSelector((state) => state.resume);
+
     const fontSize = '20px'
     return (
         <div className="main-container-left">

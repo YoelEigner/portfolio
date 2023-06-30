@@ -2,7 +2,7 @@ import Card from 'react-bootstrap/Card';
 import { useSelector } from 'react-redux';
 
 export const Experience = () => {
-    const { resume } = useSelector((state) => state);
+    const resume = useSelector((state) => state.resume);
 
     return (<div>
         {resume && resume?.experience?.map((data) => {

@@ -1,5 +1,4 @@
 
-
 export const GetAboutData = async () => {
     return (await fetch(`${process.env.REACT_APP_GITHUB_URL}/about.json`)).json()
 }
