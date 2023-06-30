@@ -37,7 +37,8 @@
             "React",
             "Redux",
             "Node.js",
-            "Express"
+            "Express",
+            "MongoDB"
         ],
         "api": "https://github.com/YoelEigner/task-api"
     },
