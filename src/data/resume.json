@@ -143,36 +143,41 @@
         },
         {
             "id": 2,
-            "name": "Node.js",
-            "level": "skilled"
-        },
-        {
-            "id": 3,
-            "name": "React Native",
-            "level": "experienced"
-        },
-        {
-            "id": 4,
             "name": "Redux",
             "level": "skilled"
         },
         {
+            "id": 3,
+            "name": "Node.js",
+            "level": "skilled"
+        },
+        {
+            "id": 4,
+            "name": "Express",
+            "level": "skilled"
+        },
+        {
             "id": 5,
+            "name": "React Native",
+            "level": "experienced"
+        },
+        {
+            "id": 6,
             "name": "SQL",
             "level": "skilled"
         },
         {
-            "id": 6,
+            "id": 7,
             "name": "MongoDB ",
             "level": "experienced"
         },
         {
-            "id": 7,
+            "id": 8,
             "name": "Python ",
             "level": "Familiar"
         },
         {
-            "id": 8,
+            "id": 9,
             "name": "AWS ",
             "level": "Familiar"
         }

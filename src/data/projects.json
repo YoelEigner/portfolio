@@ -8,7 +8,6 @@
         "tech": [
             "React",
             "Redux",
-            "React Router",
             "AWS",
             "CSS"
         ]
@@ -24,7 +23,8 @@
             "Redux",
             "Node.js",
             "Express",
-            "SQL"
+            "SQL",
+            "AWS"
         ],
         "api": "https://github.com/YoelEigner/products-api"
     },
