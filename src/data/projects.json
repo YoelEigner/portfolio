@@ -44,7 +44,7 @@
     },
     {
         "id": 4,
-        "name": "Invoicing Ssystem",
+        "name": "Invoicing System",
         "link": "https://github.com/YoelEigner/reports",
         "description": "This is a freelance project I worked on really early on in my coding career. It involves developing a comprehensive system that efficiently processes vast amounts of data through advanced algorithms. Ultimately, this system generates accurate and professional invoices for the clients.",
         "tech": [
