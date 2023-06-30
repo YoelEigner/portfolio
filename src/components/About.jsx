@@ -3,26 +3,24 @@ import { animateText } from '../utils/Util';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion'
 import { GetAboutData } from '../DAL/GetData';
+import { useDispatch, useSelector } from 'react-redux';
+import { SaveAboutData } from '../utils/ReduxMiddleware';
 export const About = () => {
+    const { about } = useSelector((state) => state);
     const [show, setShow] = useState(false)
     const [isLoading, setIsLoading] = useState(false)
-    const [data, setData] = useState(null)
     const navigate = useNavigate()
+
     const handleClick = () => {
         navigate('/home')
     }
+
     useEffect(() => {
-        const getData = async () => {
-            const json = await GetAboutData()
-            setData(json)
-            setIsLoading(false)
+        {
+            about !== null && setIsLoading(false)
+            about !== null && animateText(setShow, document, about)
         }
-        setIsLoading(true)
-        getData()
-    }, []);
-    useEffect(() => {
-        { data !== null && animateText(setShow, document, data) }
-    }, [data])
+    }, [about])
 
     return (
         <motion.div className='wrapper'
