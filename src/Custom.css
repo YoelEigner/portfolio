@@ -334,7 +334,10 @@
         flex-direction: column;
         align-items: flex-start;
     }
-
+    .main-container-resume {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
     .experience-container b {
         display: none;
     }
@@ -378,7 +381,7 @@
 }
 
 .pop-out:hover {
-    transform: scale(1.1);
+    transform: scale(1.1    );
     /* padding: 10px; */
     transition: transform 0.3s;
 
