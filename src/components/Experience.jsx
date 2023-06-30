@@ -5,6 +5,12 @@ export const Experience = () => {
     const resume = useSelector((state) => state.resume);
 
     return (<div>
+        <div className='experience-header'>
+            <h3 className="color font-header " style={{ textAlign: 'left' }} id='experience' >{'Experience'}</h3>
+            <div className="line"></div>
+        </div>
+
+
         {resume && resume?.experience?.map((data) => {
             return (
                 <div key={data.id}>

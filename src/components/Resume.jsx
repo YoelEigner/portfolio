@@ -10,7 +10,7 @@ import { useEffect, useState } from 'react';
 
 export const Resume = () => {
     const { scrollYProgress } = useScroll();
-    const [yProgress, setYProgress] = useState(false);
+    const [yProgress, setYProgress] = useState(0);
     useEffect(() => {
         return scrollYProgress.onChange(p => setYProgress(p));
     }, [scrollYProgress]);

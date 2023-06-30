@@ -8,6 +8,10 @@ export const routes = [
         component: <About />,
     },
     {
+        path: '*',
+        component: <About />,
+    },
+    {
         path: '/',
         component: <About />,
     },
@@ -16,15 +20,7 @@ export const routes = [
         component: <Home />,
     },
     {
-        path: '/portfolio/home',
-        component: <Home />,
-    },
-    {
         path: '/resume',
-        component: <Resume />,
-    },
-    {
-        path: '/portfolio/resume',
         component: <Resume />,
     }
 ];

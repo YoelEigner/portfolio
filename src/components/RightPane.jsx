@@ -5,7 +5,7 @@ export const RightPane = () => {
 
     return (
         <div className='main-container-right'>
-            <div id='experience'>
+            <div >
                 <Experience />
             </div>
             <div id='projects'>

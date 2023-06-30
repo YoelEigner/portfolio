@@ -9,6 +9,10 @@ export const Projects = () => {
 
     return (
         <div className='project-container'>
+            <div className='experience-header'>
+                <h3 className="color font-header" style={{ textAlign: 'left' }} >{'Projects'}</h3>
+                <div className="line"></div>
+            </div>
             {projects && projects.map((data) => {
                 return (
                     <div id='experience' key={data.id} onClick={() => handleDivClick(data.link)}>
