@@ -4,7 +4,7 @@
     "email": "joele8323@gmail.com",
     "company":"Lockheed Martin",
     "emailLink": "mailto:joele8323@gmail.com",
-    "title": "Full stack engineer",
+    "title": "Full stack developer",
     "github": "https://github.com/YoelEigner",
     "linkedin": "https://linkedin.com/in/yoel-eigner",
     "about1": "Full stack developer, looking to grow in full stack development for long-term career growth.",
@@ -14,7 +14,7 @@
         {
             "id": 1,
             "name": "Lockheed Martin",
-            "title": "Fullstack engineer",
+            "title": "Full stack developer",
             "start": "2021",
             "end": "Present",
             "description": "Deliver high-quality, robust production code for a diverse array of projects including hardware & software tracking system that saved the company 100's of hours, and internal billing data search. Support other web application development and maintenance.",
@@ -70,7 +70,7 @@
         {
             "id": 4,
             "name": "Israel Air Force",
-            "title": "Systems Administrator & Full stack engineer",
+            "title": "Systems Administrator & Full stack developer",
             "start": "2016",
             "end": "2018",
             "description": "Developed and maintained software to monitor soldier training certifications/recertification using C#, ASP.NET, and MySQL. Implemented scripting for automation and enhanced functionality. Effectively managed a vast network of over 2,000 computers and servers",
@@ -100,7 +100,7 @@
         {
             "id": 1,
             "name": "Manteca",
-            "title": "Full stack engineer",
+            "title": "Full stack developer",
             "start": "2022",
             "end": "Present",
             "description": "AI finance app in stealth mode",
@@ -117,7 +117,7 @@
         {
             "id": 2,
             "name": "Centre For Interpersonal Relationships ",
-            "title": "Full stack engineer",
+            "title": "Full stack developer",
             "start": "2022",
             "end": "2023",
             "description": "Freelance project",
