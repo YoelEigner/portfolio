@@ -29,11 +29,12 @@ export const Projects = () => {
                                                 {data.description}
                                             </p>
                                             <p className="card-text ">
-                                                {data.external.map((item, index) => {
+                                                {/* {data.external.map((item, index) => {
                                                     return (
                                                         <a className="text-muted font-subtext site-link" onClick={(e) => { e.stopPropagation(); handleDivClick(data.link); }}>{'Live site'}</a>
                                                     )
-                                                })}
+                                                })} */}
+                                                {console.log(data)}
                                                 {data.live && <a className="text-muted font-subtext site-link" onClick={(e) => { e.stopPropagation(); handleDivClick(data.live); }}>{'Live site'}</a>}{' '}
                                                 {data.api && <a className="text-muted font-subtext site-link" onClick={(e) => { e.stopPropagation(); handleDivClick(data.api); }}>{'API'}</a>}
                                             </p>
