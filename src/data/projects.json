@@ -7,6 +7,10 @@
         "description": "This is the site you are curretnly on, click here to see the full code.",
         "external": [
             {
+                "title": "Frontend",
+                "link": "https://github.com/YoelEigner/portfolio"
+            },
+            {
                 "title": "Live Site",
                 "link": "http://ec2-54-159-17-173.compute-1.amazonaws.com/portfolio/"
             }
@@ -24,6 +28,10 @@
         "link": "https://github.com/YoelEigner/reports",
         "description": "This is a freelance project I worked on really early on in my coding career. It involves developing a comprehensive system that efficiently processes vast amounts of data through advanced algorithms. Ultimately, this system generates accurate and professional invoices for the clients.",
         "external": [
+            {
+                "title": "Frontend",
+                "link": "https://github.com/YoelEigner/reports"
+            },
             {
                 "title": "API",
                 "link": "https://github.com/YoelEigner/Reports_Back_End"
@@ -73,6 +81,10 @@
                 "link": "http://ec2-54-159-17-173.compute-1.amazonaws.com/react/"
             },
             {
+                "title": "Frontend",
+                "link": "https://github.com/YoelEigner/products-web"
+            },
+            {
                 "title": "API",
                 "link": "https://github.com/YoelEigner/products-api"
             }
@@ -93,6 +105,10 @@
         "link": "https://github.com/YoelEigner/tasks",
         "description": "This is a sample Task mangment system created as a learning exercise.",
         "external": [
+            {
+                "title": "API",
+                "link": "https://github.com/YoelEigner/tasks"
+            },
             {
                 "title": "API",
                 "link": "https://github.com/YoelEigner/task-api"
