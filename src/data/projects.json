@@ -5,6 +5,12 @@
         "link": "https://github.com/YoelEigner/portfolio",
         "live": "http://ec2-54-159-17-173.compute-1.amazonaws.com/portfolio/",
         "description": "This is the site you are curretnly on, click here to see the full code.",
+        "external": [
+            {
+                "title": "Live Site",
+                "link": "http://ec2-54-159-17-173.compute-1.amazonaws.com/portfolio/"
+            }
+        ],
         "tech": [
             "React",
             "Redux",
@@ -18,6 +24,16 @@
         "link": "https://github.com/YoelEigner/products-web",
         "live": "http://ec2-54-159-17-173.compute-1.amazonaws.com/react/",
         "description": "This is a sample Project mangment system created as a learning exercise.",
+        "external": [
+            {
+                "title": "Live Site",
+                "link": "http://ec2-54-159-17-173.compute-1.amazonaws.com/react/"
+            },
+            {
+                "title": "API",
+                "link": "https://github.com/YoelEigner/products-api"
+            }
+        ],
         "tech": [
             "React",
             "Redux",
@@ -33,6 +49,12 @@
         "name": "Task Managment",
         "link": "https://github.com/YoelEigner/tasks",
         "description": "This is a sample Task mangment system created as a learning exercise.",
+        "external": [
+            {
+                "title": "API",
+                "link": "https://github.com/YoelEigner/task-api"
+            }
+        ],
         "tech": [
             "React",
             "Redux",
@@ -47,6 +69,12 @@
         "name": "Invoicing System",
         "link": "https://github.com/YoelEigner/reports",
         "description": "This is a freelance project I worked on really early on in my coding career. It involves developing a comprehensive system that efficiently processes vast amounts of data through advanced algorithms. Ultimately, this system generates accurate and professional invoices for the clients.",
+        "external": [
+            {
+                "title": "API",
+                "link": "https://github.com/YoelEigner/Reports_Back_End"
+            }
+        ],
         "tech": [
             "React",
             "Redux",
@@ -61,6 +89,16 @@
         "name": "Manteca AI App",
         "link": "https://apps.apple.com/us/app/manteca/id1667946093?uo=4",
         "description": "This is a side project I have been contributing to. I am heading the front-end development for a project called \"Manteca\" which is a personal finance app that is built with React Native. The app is currently avalible on IOS and Android",
+        "external": [
+            {
+                "title": "IOS App",
+                "link": "https://apps.apple.com/us/app/manteca/id1667946093?uo=4"
+            },
+            {
+                "title": "Android App",
+                "link": "https://play.google.com/store/apps/details?id=com.manteca.app"
+            }
+        ],
         "tech": [
             "React Native",
             "Redux",

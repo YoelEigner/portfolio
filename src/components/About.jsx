@@ -24,7 +24,7 @@ export const About = () => {
         <motion.div className='wrapper'
             initial={{ width: 0 }}
             animate={{ width: '100%' }}
-            exit={{ x: window.innerWidth, transition: { duration: 1 } }}
+            exit={{ x: window.innerWidth, transition: { duration: 2 } }}
         >
             <div className="bouncing-text "></div>
 
