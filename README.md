@@ -1,6 +1,6 @@
 # Full Stack Developer Portfolio Website
 
-This is a Full Stack Developer Portfolio Website created using React.
+This is my Full Stack Developer Portfolio Website I created using ReactJS and CSS/SCSS.
 
 ## Description
 
