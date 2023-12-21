@@ -2,7 +2,7 @@
     "name": "Yoel Eigner",
     "phone": "+972-54-260-5930",
     "email": "joele8323@gmail.com",
-    "company":"Lockheed Martin",
+    "company": "Lockheed Martin",
     "emailLink": "mailto:joele8323@gmail.com",
     "title": "Full stack developer",
     "github": "https://github.com/YoelEigner",
@@ -13,10 +13,30 @@
     "experience": [
         {
             "id": 1,
+            "name": "Contracter at Microsoft - Startup Booster",
+            "title": "Full stack Engineer",
+            "start": "2023",
+            "end": "Present",
+            "description": "Engaging in both front-end and back-end development, I collaborate closely with designers and project managers, leveraging collective expertise to consistently deliver high-quality results.",
+            "tech": [
+                "React",
+                "C#",
+                "Mobix",
+                "CosmosDB",
+                "Azure DevOps"
+            ],
+            "bullets": [
+                "Spearheading the React development for Microsoft XDR web portal, ensuring an intuitive user interface.",
+                "Driving BE development with C# to create seamless communication and functionality within Microsoft XDR.",
+                "Writing back-end and front-end tests to prevent issues from arising during staging and deployment."
+            ]
+        },
+        {
+            "id": 2,
             "name": "Lockheed Martin",
             "title": "Full stack developer",
             "start": "2021",
-            "end": "Present",
+            "end": "2023",
             "description": "Deliver high-quality, robust production code for a diverse array of projects including hardware & software tracking system that saved the company 100's of hours, and internal billing data search. Support other web application development and maintenance.",
             "tech": [
                 "React",
@@ -32,7 +52,7 @@
             ]
         },
         {
-            "id": 2,
+            "id": 3,
             "name": "Lockheed Martin",
             "title": "Systems Administrator",
             "start": "2018",
@@ -51,7 +71,7 @@
             ]
         },
         {
-            "id": 3,
+            "id": 4,
             "name": "Iteam Solutions",
             "title": "Systems Administrator",
             "start": "2018",
@@ -68,7 +88,7 @@
             ]
         },
         {
-            "id": 4,
+            "id": 5,
             "name": "Israel Air Force",
             "title": "Systems Administrator & Full stack developer",
             "start": "2016",
@@ -102,7 +122,7 @@
             "name": "Manteca",
             "title": "Full stack developer",
             "start": "2022",
-            "end": "Present",
+            "end": "2023",
             "description": "AI finance app in stealth mode",
             "tech": [
                 "React Native",
