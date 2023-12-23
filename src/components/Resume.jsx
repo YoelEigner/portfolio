@@ -28,7 +28,7 @@ export const Resume = () => {
                 transition={{ duration: 0.2 }}
             />
             <PersonalInfo />
-            <Experience jsonData={resume && resume.experience} onGoingWorkProjects={resume && resume.experience} title={'Relevant Work Experience'} />
+            <Experience jsonData={resume && resume.experience} onGoingWorkProjects={resume && resume.onGoingWorkProjects} title={'Relevant Work Experience'} />
             <Experience jsonData={resume && resume.sideProjects} title={'Additional Development Experience / Side Projects'} />
             <Skills />
             <Education />
