@@ -198,13 +198,18 @@
         },
         {
             "id": 9,
-            "name": "Python ",
-            "level": "Familiar"
+            "name": "CosmosDB",
+            "level": "familiar"
         },
         {
             "id": 10,
+            "name": "Python ",
+            "level": "familiar"
+        },
+        {
+            "id": 11,
             "name": "AWS ",
-            "level": "Familiar"
+            "level": "familiar"
         }
     ],
     "soft": [
