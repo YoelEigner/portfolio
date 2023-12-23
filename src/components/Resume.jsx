@@ -1,4 +1,3 @@
-import jsonData from '../data/resume.json'
 import { Experience } from './resume/Experience';
 import { PersonalInfo } from './resume/PersonalInfo';
 import { Skills } from './resume/Skills';
@@ -6,11 +5,13 @@ import { Education } from './resume/Education';
 import { Citizenships } from './resume/Citizenships';
 import { motion, useScroll } from 'framer-motion'
 import { useEffect, useState } from 'react';
+import { useSelector } from 'react-redux';
 
 
 export const Resume = () => {
     const { scrollYProgress } = useScroll();
     const [yProgress, setYProgress] = useState(0);
+    const resume = useSelector((state) => state.resume);
     useEffect(() => {
         return scrollYProgress.onChange(p => setYProgress(p));
     }, [scrollYProgress]);
@@ -27,8 +28,8 @@ export const Resume = () => {
                 transition={{ duration: 0.2 }}
             />
             <PersonalInfo />
-            <Experience jsonData={jsonData.experience} onGoingWorkProjects={jsonData.onGoingWorkProjects} title={'Relevant Work Experience'} />
-            <Experience jsonData={jsonData.sideProjects} title={'Additional Development Experience / Side Projects'} />
+            <Experience jsonData={resume && resume.experience} onGoingWorkProjects={resume && resume.experience} title={'Relevant Work Experience'} />
+            <Experience jsonData={resume && resume.sideProjects} title={'Additional Development Experience / Side Projects'} />
             <Skills />
             <Education />
             <Citizenships />

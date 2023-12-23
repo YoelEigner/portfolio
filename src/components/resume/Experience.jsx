@@ -10,7 +10,7 @@ export const Experience = (props) => {
         const handleMouseMove = (event) => { setCursorPosition({ x: event.clientX + window.scrollX, y: event.clientY + window.scrollY, }); };
         document.addEventListener('mousemove', handleMouseMove);
     }, []);
-
+    
     useEffect(() => {
         setIsScreenSmall(window.innerWidth < 1000)
     },[window.innerWidth])
