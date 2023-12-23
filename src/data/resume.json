@@ -188,16 +188,21 @@
         },
         {
             "id": 7,
+            "name": "Azure DevOps",
+            "level": "skilled"
+        },
+        {
+            "id": 8,
             "name": "MongoDB ",
             "level": "experienced"
         },
         {
-            "id": 8,
+            "id": 9,
             "name": "Python ",
             "level": "Familiar"
         },
         {
-            "id": 9,
+            "id": 10,
             "name": "AWS ",
             "level": "Familiar"
         }
