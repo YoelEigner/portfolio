@@ -108,7 +108,7 @@
     "onGoingWorkProjects": [
         {
             "jobId": 2,
-            "title": "Promoted to develop efficiencies through software programming; ongoing projects includes:",
+            "title": "Promoted to develop efficiencies through software programming; projects includes:",
             "bullets": [
                 "Computer hardware tracking software to streamline equipment search & purchase process (React.JS, Redux, MongoDB)",
                 "Computer OS version tracking to alert technicians regarding upgrades (React, Redux, Node.JS)",
