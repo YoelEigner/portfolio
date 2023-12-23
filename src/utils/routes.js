@@ -2,9 +2,10 @@ import { About } from "../components/About";
 import { Home } from "../components/Home";
 import { Resume } from "../components/Resume";
 
+export const BASE_URL = 'portfolio';
 export const routes = [
     {
-        path: '/portfolio/',
+        path: `/${BASE_URL}`,
         component: <About />,
     },
     {
@@ -16,11 +17,11 @@ export const routes = [
         component: <About />,
     },
     {
-        path: '/home',
+        path: `/${BASE_URL}/home`,
         component: <Home />,
     },
     {
-        path: '/resume',
+        path: `/${BASE_URL}/resume`,
         component: <Resume />,
     }
 ];

@@ -3,6 +3,7 @@ import { animateText } from '../utils/Util';
 import { useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion'
 import { useSelector } from 'react-redux';
+import { BASE_URL } from '../utils/routes';
 export const About = () => {
     const about = useSelector((state) => state.about);
     const [show, setShow] = useState(false)
@@ -10,14 +11,12 @@ export const About = () => {
     const navigate = useNavigate()
 
     const handleClick = () => {
-        navigate('/home')
+        navigate(`/${BASE_URL}/home`)
     }
 
     useEffect(() => {
-        {
-            about !== null && setIsLoading(false)
-            about !== null && animateText(setShow, document, about)
-        }
+        about !== null && setIsLoading(false)
+        about !== null && animateText(setShow, document, about)
     }, [about])
 
     return (

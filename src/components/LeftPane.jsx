@@ -3,6 +3,7 @@ import { handleDivClick, handleScroll } from "../utils/Util";
 import { AiFillGithub, AiFillLinkedin } from "react-icons/ai";
 import jssonData from '../data/resume.json'
 import { useSelector } from "react-redux";
+import { BASE_URL } from "../utils/routes";
 
 export const LeftPane = () => {
     const navigate = useNavigate()
@@ -18,10 +19,10 @@ export const LeftPane = () => {
             </section>
 
             <nav className="custom-list">
-                <li className="color" style={{ fontSize: fontSize }} onClick={() => navigate('/portfolio')} type="button" ><a className="font-subtext">About</a></li>
+                <li className="color" style={{ fontSize: fontSize }} onClick={() => navigate(`/${BASE_URL}`)} type="button" ><a className="font-subtext">About</a></li>
                 <li className="color" style={{ fontSize: fontSize }} onClick={() => handleScroll('experience')} type="button" ><a href="#experience" className="font-subtext" >Experience</a></li>
                 <li className="color" style={{ fontSize: fontSize }} onClick={() => handleScroll('projects')} type="button" ><a href="#projects" className="font-subtext">Projects</a></li>
-                <li className="color" style={{ fontSize: fontSize }} onClick={() => navigate('/resume')} type="button"><a className="font-subtext">Full Resume</a></li>
+                <li className="color" style={{ fontSize: fontSize }} onClick={() => navigate(`/${BASE_URL}/resume`)} type="button"><a className="font-subtext">Full Resume</a></li>
             </nav>
             <div className="social-icons">
                 <AiFillGithub size={35} color="#FFFFFF" onClick={() => handleDivClick(jssonData.github)} className="animate-icons" />
