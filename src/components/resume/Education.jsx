@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react';
-import jsonData from '../../data/resume.json'
+import { useSelector } from 'react-redux';
 
 
 export const Education = () => {
+    const resume = useSelector((state) => state.resume);
     const [isScreenSmall, setIsScreenSmall] = useState(false);
     useEffect(() => {
         setIsScreenSmall(window.innerWidth < 1000)
@@ -12,7 +13,7 @@ export const Education = () => {
         <div>
             <h3 className="color font-subtext" id='experience'>Education</h3>
             <div className="line"></div>
-            {jsonData?.education?.map((item) => {
+            {resume && resume?.education?.map((item) => {
                 return (
                     <div key={item.id} className='my-4 pop-out experience-items'>
                         <div className={`experience-item d-flex ${isScreenSmall ? 'flex-column' : 'flex-row'}`} key={item.id}>
