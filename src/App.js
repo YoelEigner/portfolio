@@ -8,6 +8,7 @@ import { gradientStyle } from './utils/Util';
 import { AnimatedRoutes } from './components/AnimatedRoutes';
 import { SaveAboutData, SaveProjectseData, SaveResumeData } from './utils/ReduxMiddleware';
 import { useDispatch } from 'react-redux';
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 function App() {
   const dispatch = useDispatch()
@@ -29,6 +30,7 @@ function App() {
 
   return (
     <>
+      <SpeedInsights />
       <div>
         <Router>
           <div className="App" style={gradientStyle(cursorPosition)}>
