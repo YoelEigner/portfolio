@@ -72,3 +72,17 @@ html * {
   font-family: 'BebasNeue';
   src: url(./fonts/BebasNeue-Regular.ttf) format('truetype');
 }
+
+.experience-section li {
+  list-style: none;
+  padding-left: 20px;
+  text-indent: -20px;
+}
+.experience-section li::before {
+  content: "- ";
+  padding-right: 10px;
+}
+.experience-section .nested-bullets {
+  padding-left: 20px;
+  text-indent: 0;
+}

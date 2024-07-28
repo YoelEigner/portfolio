@@ -13,9 +13,9 @@ export const Experience = (props) => {
     
     useEffect(() => {
         setIsScreenSmall(window.innerWidth < 1000)
-    },[window.innerWidth])
+    }, [window.innerWidth])
     return (
-        <div>
+        <div className="experience-section">
             <h3 className="color font-subtext" id='experience'>{title}</h3>
             <div className="line"></div>
             {jsonData && jsonData.map((data, idx) => {
@@ -43,7 +43,7 @@ export const Experience = (props) => {
                                         {index === 0 && onGoingWorkProjects?.find(p => p.jobId === data.id) &&
                                             onGoingWorkProjects.map((p, idx) => {
                                                 return (
-                                                    <ul key={idx}>
+                                                    <ul key={idx} className="nested-bullets">
                                                         {p.bullets.map((item, id) => {
                                                             return (
                                                                 <li key={id} className="color font-subtext empty-bullet">{item}</li>
@@ -60,6 +60,7 @@ export const Experience = (props) => {
                     </div>
                 )
             })}
-        </div >
+        </div>
+
     )
 }
