@@ -9,7 +9,7 @@ import { AnimatedRoutes } from './components/AnimatedRoutes';
 import { SaveAboutData, SaveProjectseData, SaveResumeData } from './utils/ReduxMiddleware';
 import { useDispatch } from 'react-redux';
 import { SpeedInsights } from "@vercel/speed-insights/react"
-import { Fallback } from './components/Globe/Susspense/Fallback';
+import { Fallback } from './components/Susspense/Fallback';
 
 function App() {
   const dispatch = useDispatch()

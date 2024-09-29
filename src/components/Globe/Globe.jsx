@@ -1,11 +1,10 @@
-import React, { Suspense, useEffect, useRef, useState } from 'react'
+import React, { useRef, useState } from 'react'
 import { Canvas } from '@react-three/fiber'
 import { Environment, OrbitControls } from '@react-three/drei'
 import { Pin } from './Pin';
 import { BASE_URL } from '../../utils/routes';
 import { Stars } from './Stars';
 import { Earth } from './Earth';
-import { Fallback } from './Susspense/Fallback';
 
 
 
