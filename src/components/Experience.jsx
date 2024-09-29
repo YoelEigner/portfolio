@@ -6,8 +6,8 @@ export const Experience = () => {
 
     return (<div>
         <div className='experience-header'>
-            <h3 className="color main-header">{'Experience'}</h3>
-            <div className="line"></div>
+            <h1 className="color main-header">{'Experience'}</h1>
+            <div className="centered-line"></div>
         </div>
         {resume && resume?.experience?.map((data) => {
             return (

@@ -18,9 +18,7 @@ export const Experience = (props) => {
                 return (
                     <div key={idx} className='my-4 pop-out' style={gradientStyle(cursorPosition)}>
                         <div className={`d-flex`} key={data.id}>
-                            <h4 className="color font-header">{data.title}</h4>
-                            <h4 className="color font-header">{data.name}</h4>
-                            <h4 className="color font-header">{data.start + " - " + data.end}</h4>
+                            <h1 className="color font-header">{data.title} - {data.name} - {data.start + " - " + data.end}</h1>
                         </div>
                         <div>
                             {data?.bullets.map((item, index) => {

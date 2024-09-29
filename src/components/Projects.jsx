@@ -10,13 +10,13 @@ export const Projects = () => {
     return (
         <div>
             <div className='experience-header'>
-                <h3 className="color main-header">{'Projects'}</h3>
-                <div className="line" ></div>
+                <h1 className="color main-header">{'Projects'}</h1>
+                <div className="centered-line" ></div>
             </div>
             {projects && projects.map((data) => {
                 return (
-                    <div id='experience' className='styled-container' key={data.id} onClick={() => handleDivClick(data.link)}>
-                        <Card className="card-container">
+                    <div id='experience' className='styled-container' key={data.id}>
+                        <Card className="card-container" onClick={() => handleDivClick(data.link)}>
                             <div className="col">
                                 <div className="row g-0 mx-3 my-3">
                                     <div className='data-name'>
