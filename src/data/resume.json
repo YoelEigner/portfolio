@@ -2,7 +2,7 @@
     "name": "Joel Eigner",
     "phone": "+972-54-260-5930",
     "email": "joele8323@gmail.com",
-    "company": "Contractor at Microsoft - Startup Booster",
+    "company": "Microsoft - Contractor",
     "emailLink": "mailto:joele8323@gmail.com",
     "title": "Full stack Engineer",
     "github": "https://github.com/YoelEigner",
@@ -26,7 +26,7 @@
                 "Azure DevOps"
             ],
             "bullets": [
-                "Using React I’m leading the creation and maintenance of new and existing features on the Microsoft Defender XDR portal used by millions of users daily to improve their company’s security.",
+                "Using React, I’m leading the creation and maintenance of new and existing features on the Microsoft Defender XDR portal, used by millions of users daily to improve their company’s security, resulting in a 40% increase in visitor traffic.",
                 "Implementing comprehensive testing strategies, ensuring seamless staging and deployment for both front-end and back-end components.",
                 "Developing back-end functionalities using C# to migrate to a dynamic testing infrastructure for increased reliability and scalability.",
                 "Collaborating with cross-functional teams to integrate advanced security features, improving the overall performance and security posture of the Microsoft Defender XDR portal."
@@ -245,7 +245,7 @@
         {
             "id": 5,
             "institute": "Essex county college",
-            "year": "2013 - 2016"
+            "year": "2013 - 2015"
         }
     ],
     "citizenships": [
