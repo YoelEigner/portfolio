@@ -6,14 +6,12 @@ export const Experience = () => {
 
     return (<div>
         <div className='experience-header'>
-            <h3 className="color font-header " style={{ textAlign: 'left' }} id='experience' >{'Experience'}</h3>
+            <h3 className="color main-header">{'Experience'}</h3>
             <div className="line"></div>
         </div>
-
-
         {resume && resume?.experience?.map((data) => {
             return (
-                <div key={data.id}>
+                <div className='styled-container' key={data.id}>
                     <Card className="card-container">
                         <div className="col">
                             <div className="row g-0">

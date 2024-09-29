@@ -6,9 +6,9 @@ export const AnimatedRoutes = () => {
     const location = useLocation()
     return (
         <AnimatePresence>
-            <Routes location={location} key={location.pathname}>
-                {routes.map(route => <Route key={route.path} exact element={route.component} path={route.path} />)}
-            </Routes>
+            {<Routes location={location} key={location.pathname}>
+                {routes.map((route, idx) => <Route key={idx} exact element={route.component} path={route.path} />)}
+            </Routes>}
         </AnimatePresence>
     )
 }

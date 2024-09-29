@@ -8,41 +8,38 @@ export const Projects = () => {
     const projects = useSelector((state) => state.projects);
 
     return (
-        <div className='project-container'>
+        <div>
             <div className='experience-header'>
-                <h3 className="color font-header" style={{ textAlign: 'left' }} >{'Projects'}</h3>
-                <div className="line"></div>
+                <h3 className="color main-header">{'Projects'}</h3>
+                <div className="line" ></div>
             </div>
             {projects && projects.map((data) => {
                 return (
-                    <div id='experience' key={data.id} onClick={() => handleDivClick(data.link)}>
+                    <div id='experience' className='styled-container' key={data.id} onClick={() => handleDivClick(data.link)}>
                         <Card className="card-container">
                             <div className="col">
-                                <div className="row g-0">
-                                    <div className="col-md-8">
-                                        <div className="card-body ">
-                                            <div className='data-name'>
-                                                <h6 className='card-title font-header'>{data.name}</h6>
-                                                <div className='arrow'><FiArrowUpRight /></div>
-                                            </div>
-                                            <p className="card-text font-subtext">
-                                                {data.description}
-                                            </p>
-                                            <p className="card-text ">
-                                                {data?.external?.map((item, index) => {
-                                                    return (
-                                                        <a key={index} className="text-muted font-subtext site-link" onClick={(e) => { e.stopPropagation(); handleDivClick(item.link); }}>{item.title}</a>
-                                                    )
-                                                })}
-                                            </p>
-                                            <div className="card-text">
-                                                <small className="text-muted tech-container">
-                                                    {data?.tech?.map((item, index) => (
-                                                        <div className="data-tech font-subtext" key={index}>{item} </div>
-                                                    ))}
-                                                </small>
-                                            </div>
-                                        </div>
+                                <div className="row g-0 mx-3 my-3">
+                                    <div className='data-name'>
+                                        <h6 className='card-title font-header'>{data.name}</h6>
+                                        <div className='arrow'><FiArrowUpRight /></div>
+                                    </div>
+                                    <p className="card-text font-subtext">
+                                        {data.description}
+                                    </p>
+                                    <p className="card-text ">
+                                        {data?.external?.map((item, index) => {
+                                            return (
+                                                // eslint-disable-next-line jsx-a11y/anchor-is-valid
+                                                <a key={index} className="text-muted font-subtext site-link" onClick={(e) => { e.stopPropagation(); handleDivClick(item.link); }}>{item.title}</a>
+                                            )
+                                        })}
+                                    </p>
+                                    <div className="card-text">
+                                        <small className="text-muted tech-container">
+                                            {data?.tech?.map((item, index) => (
+                                                <div className="data-tech font-subtext" key={index}>{item} </div>
+                                            ))}
+                                        </small>
                                     </div>
                                 </div>
                             </div>

@@ -4,28 +4,22 @@ import { gradientStyle } from "../../utils/Util"
 export const Experience = (props) => {
     const { jsonData, onGoingWorkProjects, title } = props
     const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
-    const [isScreenSmall, setIsScreenSmall] = useState(false);
 
     useEffect(() => {
         const handleMouseMove = (event) => { setCursorPosition({ x: event.clientX + window.scrollX, y: event.clientY + window.scrollY, }); };
         document.addEventListener('mousemove', handleMouseMove);
     }, []);
     
-    useEffect(() => {
-        setIsScreenSmall(window.innerWidth < 1000)
-    }, [window.innerWidth])
     return (
         <div className="experience-section">
             <h3 className="color font-subtext" id='experience'>{title}</h3>
             <div className="line"></div>
             {jsonData && jsonData.map((data, idx) => {
                 return (
-                    <div key={data.id} className='my-4 pop-out' style={gradientStyle(cursorPosition)}>
-                        <div className={`d-flex ${isScreenSmall ? 'flex-column' : ''}`} key={data.id}>
+                    <div key={idx} className='my-4 pop-out' style={gradientStyle(cursorPosition)}>
+                        <div className={`d-flex`} key={data.id}>
                             <h4 className="color font-header">{data.title}</h4>
-                            {!isScreenSmall && <b className="color font-header mx-2">|</b>}
                             <h4 className="color font-header">{data.name}</h4>
-                            {!isScreenSmall && <b className="color font-header mx-4">-</b>}
                             <h4 className="color font-header">{data.start + " - " + data.end}</h4>
                         </div>
                         <div>

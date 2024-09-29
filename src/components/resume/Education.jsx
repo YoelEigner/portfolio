@@ -1,13 +1,8 @@
-import { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
 
 
 export const Education = () => {
     const resume = useSelector((state) => state.resume);
-    const [isScreenSmall, setIsScreenSmall] = useState(false);
-    useEffect(() => {
-        setIsScreenSmall(window.innerWidth < 1000)
-    }, [window.innerWidth])
 
     return (
         <div>
@@ -16,9 +11,9 @@ export const Education = () => {
             {resume && resume?.education?.map((item) => {
                 return (
                     <div key={item.id} className='my-4 pop-out experience-items'>
-                        <div className={`experience-item d-flex ${isScreenSmall ? 'flex-column' : 'flex-row'}`} key={item.id}>
+                        <div className={`experience-item d-flex flex-row`} key={item.id}>
                             <div className="color font-subtext experience-item">{item.institute}</div>
-                            {item.name && !isScreenSmall && <b className="color font-subtext experience-item  mx-2">|</b>}
+                            {item.name && <b className="color font-subtext experience-item  mx-2">|</b>}
                             <div className="color font-subtext experience-item">{item.name}</div>
                             <div className="color font-subtext experience-item-date">{item.year}</div>
 

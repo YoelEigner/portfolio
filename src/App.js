@@ -25,6 +25,7 @@ function App() {
       await dispatch(SaveProjectseData())
     }
     getData()
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
 

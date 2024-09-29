@@ -20,11 +20,7 @@ export const Resume = () => {
     }, [scrollYProgress]);
 
     return (
-        <motion.div className="main-container-resume"
-            initial={{ height: 0 }}
-            animate={{ height: '100%' }}
-            exit={{ y: window.innerHeight, transition: { duration: 1 } }}
-        >
+        <div className='main-container-resume'>
             <motion.div
                 className="progress-bar"
                 animate={{ scaleX: yProgress }}
@@ -37,6 +33,6 @@ export const Resume = () => {
             <Skills />
             <Education />
             <Citizenships />
-        </motion.div>
+        </div>
     )
 }
