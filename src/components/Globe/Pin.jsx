@@ -49,10 +49,10 @@ export const Pin = ({ id, lat, lon, url, setShowStars }) => {
                     }
                     else {
                         window.open(url, '_blank');
-                        setTimeout(() => {
-                            setShowStars(true)
-                        }, 1000);
                     }
+                    setTimeout(() => {
+                        setShowStars(true)
+                    }, 1000);
                 },
             });
         }
