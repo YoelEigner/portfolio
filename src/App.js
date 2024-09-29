@@ -3,12 +3,13 @@ import './Custom.css';
 import './Button.scss';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { BrowserRouter as Router } from 'react-router-dom';
-import { useEffect, useState } from 'react';
+import { Suspense, useEffect, useState } from 'react';
 import { gradientStyle } from './utils/Util';
 import { AnimatedRoutes } from './components/AnimatedRoutes';
 import { SaveAboutData, SaveProjectseData, SaveResumeData } from './utils/ReduxMiddleware';
 import { useDispatch } from 'react-redux';
 import { SpeedInsights } from "@vercel/speed-insights/react"
+import { Fallback } from './components/Globe/Susspense/Fallback';
 
 function App() {
   const dispatch = useDispatch()
@@ -25,12 +26,12 @@ function App() {
       await dispatch(SaveProjectseData())
     }
     getData()
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
 
   return (
-    <>
+    <Suspense fallback={<Fallback />}>
       <SpeedInsights />
       <div>
         <Router>
@@ -39,7 +40,7 @@ function App() {
           </div>
         </Router>
       </div>
-    </>
+    </Suspense>
   );
 }
 

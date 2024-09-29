@@ -1,10 +1,11 @@
-import React, { Suspense, useRef, useState } from 'react'
+import React, { Suspense, useEffect, useRef, useState } from 'react'
 import { Canvas } from '@react-three/fiber'
 import { Environment, OrbitControls } from '@react-three/drei'
 import { Pin } from './Pin';
 import { BASE_URL } from '../../utils/routes';
 import { Stars } from './Stars';
 import { Earth } from './Earth';
+import { Fallback } from './Susspense/Fallback';
 
 
 
@@ -20,10 +21,9 @@ export const Globe = () => {
         { lat: -65, lon: -125, label: 'LinkedIn', url: 'https://www.linkedin.com/in/yoel-eigner' },
         { lat: -110, lon: -75, label: 'Projects', url: `${BASE_URL}/projects` },
     ];
-
+    
     return (
-        <Canvas camera={{ position: [-5, 0, -15], fov: 55 }} style={{ height: '100vh', width: '100vw', backgroundColor: '#343a40' }}>
-            <Suspense fallback={null}>
+            <Canvas camera={{ position: [-5, 0, -15], fov: 55 }} style={{ height: '100vh', width: '100vw', backgroundColor: '#343a40' }}>
                 <group ref={groupRef} rotation={[0, Math.PI, 0]} position={[0, 1, 0]}>
                     <Earth groupRef={groupRef} />
                     {showStars && <Stars />}
@@ -36,8 +36,7 @@ export const Globe = () => {
                     ))}
                 </group>
                 <Environment preset="warehouse" />
-            </Suspense>
-            <OrbitControls target={groupRef.current?.position} />
-        </Canvas>
+                <OrbitControls target={groupRef.current?.position} />
+            </Canvas>
     )
 }
