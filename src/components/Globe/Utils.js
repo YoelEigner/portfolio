@@ -6,3 +6,11 @@ export  const latLongSphere = (lat, lon, radius = 6371) => {
     const z = radius * Math.sin(latRad);
     return { x, y, z };
 };
+
+
+export const openUrl = (url) => {
+    const newWindow = window.open(url, '_blank');
+    if (!newWindow || newWindow.closed || typeof newWindow.closed === 'undefined') {
+        window.location.href = url;
+    }
+};

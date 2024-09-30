@@ -2,7 +2,7 @@ import React, { useCallback, useRef, useState, useEffect } from 'react';
 import { useFrame, useThree } from '@react-three/fiber';
 import { DoubleSide, Vector3 } from 'three';
 import gsap from 'gsap';
-import { latLongSphere } from './Utils';
+import { latLongSphere, openUrl } from './Utils';
 
 export const Pin = ({ id, lat, lon, url, setShowStars }) => {
     const pinRef = useRef();
@@ -20,7 +20,6 @@ export const Pin = ({ id, lat, lon, url, setShowStars }) => {
         const dx = event.clientX - mouseDownPosition.current.x;
         const dy = event.clientY - mouseDownPosition.current.y;
         const distance = Math.sqrt(dx * dy + dy * dy);
-
         if (distance < 5) {
             handlePinClick();
         }
@@ -45,10 +44,9 @@ export const Pin = ({ id, lat, lon, url, setShowStars }) => {
                     setShowStars(false);
                     if (!url.startsWith('https')) {
                         window.location = `${url}`;
-
                     }
                     else {
-                        window.open(url, '_blank');
+                        openUrl(url);
                     }
                     setTimeout(() => {
                         setShowStars(true)
