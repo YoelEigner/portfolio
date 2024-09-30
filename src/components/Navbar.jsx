@@ -32,6 +32,7 @@ export const NavigationMenu = () => {
                         <Nav.Link className='fs-1 font-header' onClick={() => handleInternalLink('/')}>Home</Nav.Link>
                         <Nav.Link className='fs-1 font-header' onClick={() => handleInternalLink(`${BASE_URL}/experience`)}>Experience</Nav.Link>
                         <Nav.Link className='fs-1 font-header' onClick={() => handleInternalLink(`${BASE_URL}/projects`)}>Projects</Nav.Link>
+                        <Nav.Link className='fs-1 font-header' onClick={() => handleInternalLink(`${BASE_URL}/resume`)}>Resume</Nav.Link>
                         <NavDropdown
                             title={<span className="fs-1 font-header">More</span>}
                             id="basic-nav-dropdown"
