@@ -32,11 +32,22 @@ export const NavigationMenu = () => {
                         <Nav.Link className='fs-1 font-header' onClick={() => handleInternalLink('/')}>Home</Nav.Link>
                         <Nav.Link className='fs-1 font-header' onClick={() => handleInternalLink(`${BASE_URL}/experience`)}>Experience</Nav.Link>
                         <Nav.Link className='fs-1 font-header' onClick={() => handleInternalLink(`${BASE_URL}/projects`)}>Projects</Nav.Link>
-                        <NavDropdown title="More" id="basic-nav-dropdown" className='fs-1 font-header' menuVariant='dark' >
-                            <NavDropdown.Item className='fs-3 d-flex' onClick={() => handleExternalLink(resume.github)} ><AiFillGithub size={25} style={{ marginRight: 2 }} />GitHub</NavDropdown.Item>
-                            <NavDropdown.Item className='fs-3 d-flex' onClick={() => handleExternalLink(resume.linkedin)} ><AiFillLinkedin size={25} style={{ marginRight: 2 }} />Linkedin</NavDropdown.Item>
-                            <NavDropdown.Item className='fs-3 d-flex' onClick={() => handleExternalLink(resume.emailLink)}><AiOutlineMail size={25} style={{ marginRight: 2 }} />Email</NavDropdown.Item>
+                        <NavDropdown
+                            title={<span className="fs-1 font-header">More</span>}
+                            id="basic-nav-dropdown"
+                            className='fs-1 font-header'
+                            menuVariant='dark'>
+                            <NavDropdown.Item className='fs-3 d-flex font-header' onClick={() => handleExternalLink(resume.github)}>
+                                <AiFillGithub size={25} style={{ marginRight: 2 }} />GitHub
+                            </NavDropdown.Item>
+                            <NavDropdown.Item className='fs-3 d-flex font-header' onClick={() => handleExternalLink(resume.linkedin)}>
+                                <AiFillLinkedin size={25} style={{ marginRight: 2 }} />LinkedIn
+                            </NavDropdown.Item>
+                            <NavDropdown.Item className='fs-3 d-flex font-header' onClick={() => handleExternalLink(resume.emailLink)}>
+                                <AiOutlineMail size={25} style={{ marginRight: 2 }} />Email
+                            </NavDropdown.Item>
                         </NavDropdown>
+
                     </Nav>
                 </Navbar.Collapse>
             </Container>
