@@ -1,4 +1,4 @@
-import './Fallback.c    ss';
+import './Fallback.css';
 
 export const Fallback = ({ children }) => {
     return (
