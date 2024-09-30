@@ -3,6 +3,7 @@ import { useFrame, useThree } from '@react-three/fiber';
 import { DoubleSide, Vector3 } from 'three';
 import gsap from 'gsap';
 import { latLongSphere, openUrl } from './Utils';
+import { useNavigate } from 'react-router-dom';
 
 export const Pin = ({ id, lat, lon, url, setShowStars }) => {
     const pinRef = useRef();
@@ -11,6 +12,7 @@ export const Pin = ({ id, lat, lon, url, setShowStars }) => {
     const { x, y, z } = latLongSphere(lat, lon, 5);
     const position = new Vector3(x, y, z);
     const [targetPosition, setTargetPosition] = useState(null);
+    const navigate = useNavigate()
 
     const handleMouseDown = (event) => {
         mouseDownPosition.current = { x: event.clientX, y: event.clientY };
@@ -43,7 +45,7 @@ export const Pin = ({ id, lat, lon, url, setShowStars }) => {
                 onComplete: () => {
                     setShowStars(false);
                     if (!url.startsWith('https')) {
-                        window.location = `${url}`;
+                        navigate(url);  
                     }
                     else {
                         openUrl(url);
