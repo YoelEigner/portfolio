@@ -21,7 +21,7 @@ export const Experience = () => {
                                 <div className="col-md-8">
                                     <div className="card-body ">
                                         <h5 className="card-title font-header">{data.title}</h5>
-                                        <h6 className='font-subtext'>{data.name}</h6>
+                                        <h3 className='font-subtext'>{data.name}</h3>
                                         <p className="card-text font-subtext">
                                             {data.description}
                                         </p>
