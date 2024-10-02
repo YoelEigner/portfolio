@@ -12,7 +12,7 @@
             },
             {
                 "title": "Live Site",
-                "link": "http://ec2-54-159-17-173.compute-1.amazonaws.com/portfolio/"
+                "link": "https://portfolio-chi-eight-35.vercel.app"
             }
         ],
         "tech": [
