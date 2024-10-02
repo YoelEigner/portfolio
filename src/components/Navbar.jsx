@@ -30,6 +30,7 @@ export const NavigationMenu = () => {
                 <Navbar.Collapse id="responsive-navbar-nav" className='justify-content-end'>
                     <Nav className="ml-auto">
                         <Nav.Link className='fs-1 font-header' onClick={() => handleInternalLink('/')}>Home</Nav.Link>
+                        <Nav.Link className='fs-1 font-header' onClick={() => handleInternalLink(`${BASE_URL}/about`)}>About</Nav.Link>
                         <Nav.Link className='fs-1 font-header' onClick={() => handleInternalLink(`${BASE_URL}/experience`)}>Experience</Nav.Link>
                         <Nav.Link className='fs-1 font-header' onClick={() => handleInternalLink(`${BASE_URL}/projects`)}>Projects</Nav.Link>
                         <Nav.Link className='fs-1 font-header' onClick={() => handleInternalLink(`${BASE_URL}/resume`)}>Resume</Nav.Link>
