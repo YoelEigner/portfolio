@@ -4,7 +4,7 @@
         "name": "Portfolio Site ",
         "link": "https://github.com/YoelEigner/portfolio",
         "live": "http://ec2-54-159-17-173.compute-1.amazonaws.com/portfolio/",
-        "description": "This is the site you are curretnly on, click here to see the full code.",
+        "description": "This is the site you are currently on, click here to see the full code.",
         "external": [
             {
                 "title": "Frontend",
@@ -51,7 +51,7 @@
         "id": 3,
         "name": "Manteca AI App",
         "link": "https://apps.apple.com/us/app/manteca/id1667946093?uo=4",
-        "description": "This is a side project I have been contributing to. I am heading the front-end development for a project called \"Manteca\" which is a personal finance app that is built with React Native. The app is currently avalible on IOS and Android",
+        "description": "This is a side project I have been contributing to. I am heading the front-end development for a project called \"Manteca\" which is a personal finance app that is built with React Native.",
         "external": [
             {
                 "title": "IOS App",
@@ -72,10 +72,10 @@
     },
     {
         "id": 4,
-        "name": "Product Managment",
+        "name": "Product Management",
         "link": "https://github.com/YoelEigner/products-web",
         "live": "http://ec2-54-159-17-173.compute-1.amazonaws.com/react/",
-        "description": "This is a sample Project mangment system created as a learning exercise.",
+        "description": "This is a sample Project management system created as a learning exercise.",
         "external": [
             {
                 "title": "Live Site",
@@ -102,9 +102,9 @@
     },
     {
         "id": 5,
-        "name": "Task Managment",
+        "name": "Task Management",
         "link": "https://github.com/YoelEigner/tasks",
-        "description": "This is a sample Task mangment system created as a learning exercise.",
+        "description": "This is a sample Task management system created as a learning exercise.",
         "external": [
             {
                 "title": "Frontend",
