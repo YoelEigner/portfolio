@@ -166,17 +166,18 @@
   height: 100vh;
 }
 
-.bouncing-text {
+.about-text {
   color: white;
   font-size: 26px;
   padding-top: 10%;
+  font-family: "Roboto Condensed" !important;
 
   padding-right: 20%;
   padding-left: 20%;
 }
 
 @media screen and (max-width: 768px) {
-  .bouncing-text {
+  .about-text {
     padding-right: 5%;
     padding-left: 5%;
   }

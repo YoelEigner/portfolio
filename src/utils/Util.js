@@ -18,29 +18,3 @@ export const handleScroll = (id) => {
 export const handleDivClick = (url) => {
     window.open(url, '_blank');
 };
-
-export const animateText = (setShow, document, aboutData) => {
-
-    const text = document.querySelector('.bouncing-text');
-    const words = aboutData.about.split(' ');
-    text.textContent = '';
-    words.forEach((word, wordIndex) => {
-        word.split('').forEach((letter, letterIndex) => {
-            const span = document.createElement('span');
-            span.classList.add('bounce-letter');
-            span.classList.add('font-subtext');
-            span.textContent = letter;
-            span.style.animationDelay = `${wordIndex * 0.05 + letterIndex * 0.1}s`;
-            text.appendChild(span);
-
-            if (wordIndex === words.length - 1 && letterIndex === word.length - 1) {
-                span.addEventListener('animationend', () => {
-                    setShow(true);
-                });
-            }
-        });
-
-        const space = document.createTextNode(' ');
-        text.appendChild(space);
-    });
-}
