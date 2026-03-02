@@ -1,8 +1,8 @@
 {
     "name": "Joel Eigner",
-    "phone": "+972-54-260-5930",
+    "phone": "+39-328-777-5185",
     "email": "joele8323@gmail.com",
-    "company": "Microsoft - Contractor",
+    "company": "BetVictor Group",
     "emailLink": "mailto:joele8323@gmail.com",
     "title": "Full stack Engineer",
     "github": "https://github.com/YoelEigner",
@@ -13,10 +13,30 @@
     "experience": [
         {
             "id": 1,
+            "name": "BetVictor Group",
+            "title": "Full stack Engineer",
+            "start": "2025",
+            "end": "Present",
+            "description": "Working across front-end and back-end development, I focus on building secure, high stakes web applications and collaborate with cross functional teams to deliver reliable, high quality solutions.",
+            "tech": [
+                "React",
+                "Rails",
+                "Redux",
+                "MySql",
+            ],
+            "bullets": [
+                "Led development of new and existing features across high traffic, business critical web applications where reliability and accuracy are essential",
+                "Designed and implemented authentication, security, and session management systems on web, with native integrations",
+                "Improved application performance and user experience through frontend optimization and modern architecture practices",
+                "Collaborating with cross functional teams to debug complex production issues, enhance observability, and streamline deployment processes",
+            ]
+        },
+        {
+            "id": 2,
             "name": "Microsoft (Contractor)",
             "title": "Full stack Engineer",
             "start": "2023",
-            "end": "Present",
+            "end": "2025",
             "description": "Engaging in both front-end and back-end development, I collaborate closely with designers and project managers, leveraging collective expertise to consistently deliver high-quality results.",
             "tech": [
                 "React",
@@ -33,7 +53,7 @@
             ]
         },
         {
-            "id": 2,
+            "id": 3,
             "name": "Lockheed Martin",
             "title": "Full stack developer",
             "start": "2021",
@@ -53,7 +73,7 @@
             ]
         },
         {
-            "id": 3,
+            "id": 4,
             "name": "Lockheed Martin",
             "title": "Systems Administrator",
             "start": "2018",
@@ -72,7 +92,7 @@
             ]
         },
         {
-            "id": 4,
+            "id": 5,
             "name": "Iteam Solutions",
             "title": "Systems Administrator",
             "start": "2018",
@@ -89,7 +109,7 @@
             ]
         },
         {
-            "id": 5,
+            "id": 6,
             "name": "Israel Air Force",
             "title": "Systems Administrator & Full stack developer",
             "start": "2016",
@@ -164,51 +184,56 @@
         },
         {
             "id": 2,
+            "name": "Rails",
+            "level": "experienced"
+        },
+        {
+            "id": 3,
             "name": "Redux",
             "level": "skilled"
         },
         {
-            "id": 3,
+            "id": 4,
             "name": "Node.js",
             "level": "skilled"
         },
         {
-            "id": 4,
+            "id": 5,
             "name": "Express",
             "level": "skilled"
         },
         {
-            "id": 5,
+            "id": 6,
             "name": "React Native",
             "level": "experienced"
         },
         {
-            "id": 6,
+            "id": 7,
             "name": "SQL",
             "level": "skilled"
         },
         {
-            "id": 7,
+            "id": 8,
             "name": "Azure DevOps",
             "level": "skilled"
         },
         {
-            "id": 8,
+            "id": 9,
             "name": "MongoDB ",
             "level": "experienced"
         },
         {
-            "id": 9,
+            "id": 10,
             "name": "CosmosDB",
             "level": "familiar"
         },
         {
-            "id": 10,
+            "id": 11,
             "name": "Python ",
             "level": "familiar"
         },
         {
-            "id": 11,
+            "id": 12,
             "name": "AWS ",
             "level": "familiar"
         }
